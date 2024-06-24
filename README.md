@@ -1,17 +1,3 @@
----
-license: cc-by-nc-sa-4.0
-task_categories:
-- visual-question-answering
-language:
-- zh
-tags:
-- image
-- alignment
-pretty_name: AlignMMBench
-size_categories:
-- 1K<n<10K
----
-
 # AlignMMBench: Evaluating Chinese Multimodal Alignment in Large Vision-Language Models
 
 <font size=4><div align='center' > [[🍎 Project Page](https://alignmmbench.github.io/)] [[📖 arXiv Paper](https://arxiv.org/pdf/2406.09295)] [[📊 Dataset](https://huggingface.co/datasets/THUDM/AlignMMBench)]  </div></font>
