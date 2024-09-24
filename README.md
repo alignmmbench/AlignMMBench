@@ -10,6 +10,7 @@
 
 ## 🔥 News
 
+* **`2024.09.23`** 🌟 We provide the code, model, and data for evaluation!
 * **`2024.06.14`** 🌟 We released AlignMMBench, a comprehensive alignment benchmark for vision language models!
 
 
@@ -27,6 +28,30 @@ AlignMMBench a multimodal alignment benchmark that encompasses both single-turn 
 
 <img src="./assets/image_examples.png" width="100%" height="50%">
 
+## 💻 Evaluate your model
+
+**Step 0** 
+Download AlignMMBench data from [here](https://huggingface.co/datasets/THUDM/AlignMMBench), and CritiqueVLM model file from [here](https://drive.google.com/file/d/1YiOs4Tmh_DfMsuYHb2Ij53lSud9XSpUJ/view)s-d.
+
+**Step 1** 
+Infer your model on AlignMMBench and get your model responses in `.jsonl` format like this:
+```json
+{"question_id": "00000000-0", "predict": "..."}
+{"question_id": "00000000-1", "predict": "..."}
+......
+```
+
+**Step 2** Clone this repository and install requirements.
+```bash
+https://github.com/wuyuhang05/AlignMMBench.git && cd AlignMMBench
+pip install -r requirements.txt
+```
+
+**Step 3** Run CritiqueVLM evaluator in `evaluate.py`:
+```bash
+python evaluate.py --critic_model_path <critiqueVLM_path> --response_file <your_model_responses_path> --metadata_file <metadata_path> --save_path <path_to_save_detailed_evaluation_results>
+```
+
 
 ## 📈 Results
 
@@ -39,7 +64,7 @@ AlignMMBench a multimodal alignment benchmark that encompasses both single-turn 
 The use of the dataset and the original videos is governed by the Creative Commons Attribution-NonCommercial-ShareAlike
 4.0 International (CC BY-NC-SA 4.0) license, as detailed in the  [LICENSE](./LICENSE).
 
-If you believe that any content in this dataset infringes on your rights, please contact us at **wenmeng.yu@aminer.cn** to request its
+If you believe that any content in this dataset infringes on your rights, please contact us at **wuyuhang2022@gmail.com**, **wenmeng.yu@aminer.cn** to request its
 removal.
 
 ## Citation
