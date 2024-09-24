@@ -19,7 +19,6 @@ def parse_args():
     parser.add_argument(
         '--critic_model_path',
         type=str,
-        default="/share/home/wuyuhang/working_dir/vlbackbone/checkpoints/critic6b",
         help="path to the critic model file. must in SAT format"
     )
     
@@ -33,7 +32,6 @@ def parse_args():
     parser.add_argument(
         '--response_file',
         type=str,
-        default="/share/home/wuyuhang/working_dir/alignmmbench/responses/YiVL_34B.jsonl",
         help="path to the model response file, should in .jsonl format"
     )
     
@@ -47,7 +45,7 @@ def parse_args():
     parser.add_argument(
         '--save_path',
         type=str,
-        default='results/result.jsonl',
+        default='result.jsonl',
         help="path to save detailed evaluation results, should in .jsonl format"
     )
     

@@ -1,0 +1,5 @@
+jsonlines==4.0.0
+SwissArmyTransformer==0.4.11
+torch==2.4.0
+tqdm==4.65.0
+transformers==4.44.2
