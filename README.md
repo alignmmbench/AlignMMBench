@@ -31,7 +31,9 @@ AlignMMBench a multimodal alignment benchmark that encompasses both single-turn 
 ## 💻 Evaluate your model
 
 **Step 0** 
-Download AlignMMBench data from [here](https://huggingface.co/datasets/THUDM/AlignMMBench), and CritiqueVLM model file from [here](https://drive.google.com/file/d/1YiOs4Tmh_DfMsuYHb2Ij53lSud9XSpUJ/view).
+Download AlignMMBench data from [hidden], and CritiqueVLM model file from [hidden].
+
+> Due to the requirements of double-blind review, we have hidden the download links for the data and models. They will be made public after the review process is completed.
 
 **Step 1** 
 Infer your model on AlignMMBench and get your model responses in `.jsonl` format like this:
