@@ -45,7 +45,7 @@ Infer your model on AlignMMBench and get your model responses in `.jsonl` format
 
 **Step 2** Clone this repository and install requirements.
 ```bash
-https://github.com/wuyuhang05/AlignMMBench.git && cd AlignMMBench
+git clone https://github.com/alignmmbench/AlignMMBench.git && cd AlignMMBench
 pip install -r requirements.txt
 ```
 
